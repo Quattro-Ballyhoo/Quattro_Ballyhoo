@@ -1,10 +1,10 @@
-time_observed_at,latitude,longitude,scientific_name,common_name
-2013-06-02 23:38:32 UTC,26.798122,-82.276696,Centropomus undecimalis,Common Snook
-2013-06-05 20:03:51 UTC,26.844044,-82.286104,Centropomus undecimalis,Common Snook
-2013-06-07 11:31:53 UTC,26.804404,-82.283981,Centropomus undecimalis,Common Snook
-2013-06-07 11:31:53 UTC,26.804404,-82.283981,Centropomus undecimalis,Common Snook
-2013-12-24 20:30:29 UTC,28.79006111,-82.60298889,Centropomus undecimalis,Common Snook
-2014-05-30 19:11:55 UTC,26.775994,-82.267925,Centropomus undecimalis,Common Snook
-2014-11-10 14:58:14 UTC,27.382633,-82.621086,Centropomus undecimalis,Common Snook
-2014-12-06 15:31:24 UTC,26.641507,-82.178543,Centropomus undecimalis,Common Snook
-2015-06-18 09:50:44 UTC,26.742069,-82.258012,Centropomus undecimalis,Common Snook
+date,time,latitude,longitude,scientific_name,common_name
+6/2/13,23:38:32 UTC,26.798122,-82.276696,Centropomus undecimalis,Common Snook
+6/5/13,20:03:51 UTC,26.844044,-82.286104,Centropomus undecimalis,Common Snook
+6/7/13,11:31:53 UTC,26.804404,-82.283981,Centropomus undecimalis,Common Snook
+6/7/13,11:31:53 UTC,26.804404,-82.283981,Centropomus undecimalis,Common Snook
+12/24/13,20:30:29 UTC,28.79006111,-82.60298889,Centropomus undecimalis,Common Snook
+5/30/14,19:11:55 UTC,26.775994,-82.267925,Centropomus undecimalis,Common Snook
+11/10/14,14:58:14 UTC,27.382633,-82.621086,Centropomus undecimalis,Common Snook
+12/6/14,15:31:24 UTC,26.641507,-82.178543,Centropomus undecimalis,Common Snook
+6/18/15,09:50:44 UTC,26.742069,-82.258012,Centropomus undecimalis,Common Snook

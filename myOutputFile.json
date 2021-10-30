@@ -1,62 +1,71 @@
 [
  {
-  "time_observed_at": "2013-06-02 23:38:32 UTC",
+  "date": "6/2/13",
+  "time": "23:38:32 UTC",
   "latitude": "26.798122",
   "longitude": "-82.276696",
   "scientific_name": "Centropomus undecimalis",
   "common_name": "Common Snook"
  },
  {
-  "time_observed_at": "2013-06-05 20:03:51 UTC",
+  "date": "6/5/13",
+  "time": "20:03:51 UTC",
   "latitude": "26.844044",
   "longitude": "-82.286104",
   "scientific_name": "Centropomus undecimalis",
   "common_name": "Common Snook"
  },
  {
-  "time_observed_at": "2013-06-07 11:31:53 UTC",
+  "date": "6/7/13",
+  "time": "11:31:53 UTC",
   "latitude": "26.804404",
   "longitude": "-82.283981",
   "scientific_name": "Centropomus undecimalis",
   "common_name": "Common Snook"
  },
  {
-  "time_observed_at": "2013-06-07 11:31:53 UTC",
+  "date": "6/7/13",
+  "time": "11:31:53 UTC",
   "latitude": "26.804404",
   "longitude": "-82.283981",
   "scientific_name": "Centropomus undecimalis",
   "common_name": "Common Snook"
  },
  {
-  "time_observed_at": "2013-12-24 20:30:29 UTC",
+  "date": "12/24/13",
+  "time": "20:30:29 UTC",
   "latitude": "28.79006111",
   "longitude": "-82.60298889",
   "scientific_name": "Centropomus undecimalis",
   "common_name": "Common Snook"
  },
  {
-  "time_observed_at": "2014-05-30 19:11:55 UTC",
+  "date": "5/30/14",
+  "time": "19:11:55 UTC",
   "latitude": "26.775994",
   "longitude": "-82.267925",
   "scientific_name": "Centropomus undecimalis",
   "common_name": "Common Snook"
  },
  {
-  "time_observed_at": "2014-11-10 14:58:14 UTC",
+  "date": "11/10/14",
+  "time": "14:58:14 UTC",
   "latitude": "27.382633",
   "longitude": "-82.621086",
   "scientific_name": "Centropomus undecimalis",
   "common_name": "Common Snook"
  },
  {
-  "time_observed_at": "2014-12-06 15:31:24 UTC",
+  "date": "12/6/14",
+  "time": "15:31:24 UTC",
   "latitude": "26.641507",
   "longitude": "-82.178543",
   "scientific_name": "Centropomus undecimalis",
   "common_name": "Common Snook"
  },
  {
-  "time_observed_at": "2015-06-18 09:50:44 UTC",
+  "date": "6/18/15",
+  "time": "09:50:44 UTC",
   "latitude": "26.742069",
   "longitude": "-82.258012",
   "scientific_name": "Centropomus undecimalis",
