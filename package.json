@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Quattro-Ballyhoo/Quattro_Ballyhoo/issues"
   },
-  "homepage": "https://github.com/Quattro-Ballyhoo/Quattro_Ballyhoo#readme"
+  "homepage": "https://github.com/Quattro-Ballyhoo/Quattro_Ballyhoo#readme",
+  "dependencies": {
+    "mongoose": "^6.0.12"
+  }
 }
