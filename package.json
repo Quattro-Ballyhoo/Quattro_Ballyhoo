@@ -1,0 +1,23 @@
+{
+  "name": "eye4fish",
+  "version": "1.0.0",
+  "description": "software application for class",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Quattro-Ballyhoo/Quattro_Ballyhoo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Quattro-Ballyhoo/Quattro_Ballyhoo/issues"
+  },
+  "homepage": "https://github.com/Quattro-Ballyhoo/Quattro_Ballyhoo#readme",
+  "dependencies": {
+    "convert-csv-to-json": "^1.3.1",
+    "mongoose": "^6.0.12"
+  }
+}
