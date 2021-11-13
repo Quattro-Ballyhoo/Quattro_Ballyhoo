@@ -1,10 +1,9 @@
-const connectionString = 'mongodb+srv://m001-student:m001-mongodb-basics@eye4fish.eneq6.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
-const mongoose = require('mongoose')
-const userSchema = require('./userSchema.js')
-var assert = require('assert')
-const User = mongoose.model('user', userSchema, 'user')
-
-var output = require('./myOutputFile.js')
+const mongoose = require("mongoose");
+const connectionString =
+  "mongodb+srv://m001-student:m001-mongodb-basics@eye4fish.eneq6.mongodb.net/Eye4Fish?retryWrites=true&w=majority";
+const fishiesSchema = require("./fishiesSchema.js");
+var assert = require("assert");
+var output = require("./myOutputFile.js");
 
 // async function createUser(username) {
 //   return new User({
@@ -17,13 +16,25 @@ var output = require('./myOutputFile.js')
 //   return await User.findOne({ username })
 // }
 
-const connector = mongoose.connect(connectionString)
-var species = mongoose.model('species', userSchema)
-species.collection.insertMany(output, function(err,r) {
-    assert.equal(null,err);
+mongoose.connect(connectionString, function(error, result) {
+  if (error) {
+    console.log("Fail to connect");
+  }
+  if (result) {
+    console.log("Connection worked");
+  }
+});
 
-})
-mongoose.disconnect();
+//async () => {
+const species = mongoose.model("species", fishiesSchema);
+
+let Species = species.find({ latitude: "26.1894474" }).then(
+  err => console.log(err),
+  species => console.log("test")
+);
+
+//mongoose.disconnect();
+//};
 // ;(async () => {
 //   const connector = mongoose.connect(connectionString)
 //   const username = process.argv[2].split('=')[1]
@@ -36,6 +47,5 @@ mongoose.disconnect();
 //     user = await createUser(username)
 //   }
 
-  //console.log(user)
-  //process.exit(0)
-//})()
+//console.log(user)
+//process.exit(0)
