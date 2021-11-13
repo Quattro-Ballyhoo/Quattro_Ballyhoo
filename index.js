@@ -14,6 +14,8 @@ mongoose.connect(connectionString, function(error, result)
   }
 });
 ​
+//console.log("Menu:")
+
 prompt.start();
 ​
 prompt.get(['Species_name'], function(err,result) {
@@ -21,10 +23,10 @@ prompt.get(['Species_name'], function(err,result) {
   return queryData(result);
 });
 ​
-function onErr(err) {
-  console.log(err);
-  return 1;
-};
+//function onErr(err) {
+  //console.log(err);
+  //return 1;
+//};
 ​
 function queryData(result) {
   const species = mongoose.model("species", fishiesSchema);
