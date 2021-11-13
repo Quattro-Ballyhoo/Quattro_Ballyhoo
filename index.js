@@ -71,9 +71,17 @@ function onErr(err) {
 
 function queryData(result) {
   const species = mongoose.model("species", fishiesSchema);
+<<<<<<< Updated upstream
   let Species = species.find({ latitude: result.Species_name }).then(
     err => console.log(err),
     species => console.log("test")
   );
 }
+>>>>>>> Stashed changes
+=======
+  let Species = species.find({latitude: result.Species_name}).then(
+    err => console.log(err),
+    species => console.log("test")
+  );
+};
 >>>>>>> Stashed changes
