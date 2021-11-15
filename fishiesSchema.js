@@ -28,10 +28,3 @@ const fishiesSchema = new mongoose.Schema({
 })
 
 module.exports = fishiesSchema
-
-// "date": "",
-// "time": "",
-// "latitude": "26.1894474",
-// "longitude": "-80.09024811",
-// "scientific_name": "Centropomus undecimalis",
-// "common_name": "Common Snook"
