@@ -33,7 +33,7 @@ const connect = async _ => {
 connect();
 
 //menu choices function
-const menuSelect = () => {
+function menuSelect () {
   console.log("Menu:");
   console.log("1. Search by latitude");
   console.log("2. Search by common name");
@@ -41,10 +41,14 @@ const menuSelect = () => {
   const menuChoice = promptsync("Please enter menu choice: ");
   //console.log("Menu choice: " + Number(menuChoice));
 
-  //while (menuChoice != "1" && menuChoice != "2" && menuChoice != "3") {
-  //  console.log("Not a valid input");
-  //menuSelect();
-  //}
+  while (menuChoice != "1" && menuChoice != "2" && menuChoice != "3") {
+   console.log("Not a valid input");
+   menuChoice = menuSelect();
+
+   if (menuChoice == 1 || menuChoice == 2 || menuChoice ==3){
+     break;
+   }
+  }
   return menuChoice;
 };
 
