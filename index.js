@@ -6,6 +6,7 @@ var output = require("./myOutputFile.js");
 const prompt = require("prompt");
 const promptsync = require("prompt-sync")({ sigint: true });
 
+// to update file
 const connect = async _ => {
   try {
     const connectSuccess = await mongoose.connect(connectionString);
