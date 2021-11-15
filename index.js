@@ -23,6 +23,7 @@ const connect = async _ => {
   // }
   let searchString;
   let result;
+  
   while (menuChoice >= 0 && menuChoice <= 6) {
     searchString = filterInput(menuChoice);
     result = await queryData(searchString, menuChoice);
@@ -125,7 +126,6 @@ function queryData(searchString, menuChoice) {
       return Species;
       break;
     // need a default statement
-
   }
   // console.log(dataField);
   // console.log(searchString);
