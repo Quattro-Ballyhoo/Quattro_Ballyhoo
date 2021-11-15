@@ -23,7 +23,7 @@ const connect = async _ => {
   // }
   let searchString;
   let result;
-  while (menuChoice == "1" || menuChoice == "2" || menuChoice == "3") {
+  while (menuChoice >= 0 && menuChoice <= 6) {
     searchString = filterInput(menuChoice);
     result = await queryData(searchString, menuChoice);
     menuChoice = menuSelect();
@@ -35,9 +35,12 @@ connect();
 //menu choices function
 const menuSelect = () => {
   console.log("Menu:");
-  console.log("1. Search by latitude");
-  console.log("2. Search by common name");
-  console.log("3. Exit");
+  console.log("1. Search by Common Name");
+  console.log("2. Search by Scientific Name");
+  console.log("3. Latitude");
+  console.log("4. longitude");
+  console.log("5. Date");
+  console.log("6. Exit");
   const menuChoice = promptsync("Please enter menu choice: ");
   //console.log("Menu choice: " + Number(menuChoice));
 
@@ -53,12 +56,21 @@ const filterInput = menuChoice => {
   let menuString = "";
   switch (menuChoice) {
     case "1":
-      menuString = "latitude";
+      menuString = "Common Name";
       break;
     case "2":
-      menuString = "common name";
+      menuString = "Scientific Name";
       break;
     case "3":
+      menuString = "latitude";
+      break;
+    case "4":
+      menuString = "longitude";
+      break;
+    case "5":
+      menuString = "Date";
+      break;
+    case "6":
       console.log("Bye!");
       process.exit(0);
     default:
@@ -79,18 +91,41 @@ function queryData(searchString, menuChoice) {
   switch (menuChoice) {
     case "1":
       Species = species
-        .find({ latitude: searchString })
+        .find({ common_name: searchString })
         .then(err => console.log(err));
-      //dataField = latitude;
+      //dataField = common_name;
       return Species;
       break;
     case "2":
       Species = species
-        .find({ common_name: searchString })
+        .find({ scientific_name: searchString })
         .then(err => console.log(err));
-      //dataField = "common_name";
+      //dataField = "scientific_name";
       return Species;
       break;
+    case "3":
+      Species = species
+        .find({ latitude: searchString })
+        .then(err => console.log(err));
+      //dataField = "latitude";
+      return Species;
+      break;
+    case "4":
+      Species = species
+        .find({ longitude: searchString })
+        .then(err => console.log(err));
+      //dataField = "longitude";
+      return Species;
+      break;
+    case "5":
+      Species = species
+        .find({ date: searchString })
+        .then(err => console.log(err));
+      //dataField = "date";
+      return Species;
+      break;
+    // need a default statement
+
   }
   // console.log(dataField);
   // console.log(searchString);
